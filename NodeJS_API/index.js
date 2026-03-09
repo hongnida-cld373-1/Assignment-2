@@ -18,6 +18,18 @@ app.get('/view', (req, res) => {
     res.send('<html><body>INSIDE VIEW API..</body></html>');
 });
 
+app.post('/login', (req, res) => {
+    res.send('<html><body>INSIDE LOGIN API...</body></html>');
+});
+
+app.put('/updateprofile', (req, res) => {
+    res.send('<html><body>INSIDE UPDATE PROFILE API...</body></html>');
+});
+
+app.delete('/delete', (req, res) => {
+    res.send('<html><body>INSIDE DELETE API...</body></html>');
+});
+
 const PORT = 3000;
 
 app.listen(PORT, () => {
