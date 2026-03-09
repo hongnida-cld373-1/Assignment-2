@@ -6,6 +6,10 @@ app.get('/search', (req, res) => {
     res.send('<html><body>INSIDE SEARCH API..</body></html>');
 });
 
+app.get('/view', (req, res) => {
+    res.send('<html><body>INSIDE VIEW API..</body></html>');
+});
+
 const PORT = 3000;
 
 app.listen(PORT, () => {
