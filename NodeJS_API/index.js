@@ -1,6 +1,12 @@
 // IMPORT Express Server
 const e1 = require('express');
 const app = e1();
+
+// Root API
+app.get('/', (req, res) => {
+    res.send('<html><body>Welcome!</body></html>');
+});
+
 //SEARCH API
 app.get('/search', (req, res) => {
     res.send('<html><body>INSIDE SEARCH API..</body></html>');
