@@ -2,7 +2,7 @@
 const e1 = require('express');
 const app = e1();
 
-// cmt trigger for webhook
+// trigger 
 
 // Root API
 app.get('/', (req, res) => {
